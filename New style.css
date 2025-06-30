@@ -1,0 +1,189 @@
+/* === Global Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #222;
+  background-image: url(ChatGPT\ Image\ Jun\ 30\,\ 2025\,\ 09_47_44\ AM.png);
+}
+
+/* === Navigation Bar === */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f3f;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00bfff;
+  transform: scale(1.1);
+}
+
+/* === Hero Section with Background Image === */
+.hero {
+  background-image: url("images/ai-hero.jpg"); /* 🔁 Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #00bfff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #009acd;
+}
+
+/* === Overview, About, Contact, Curriculum === */
+section {
+  max-width: 960px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+h1,
+h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-top: 25px;
+  color: #003366;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1em;
+  color: white;
+}
+
+/* === Image Slider Section === */
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 30px 0;
+  scroll-behavior: smooth;
+}
+
+.slider img {
+  height: 250px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+}
+
+.mail {
+  color: white;
+}
+
+.email {
+  color: white;
+  font-size: 1em;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  background-color: #001f3f;
+  color: white;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .slider {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider img {
+    width: 90%;
+    height: auto;
+  }
+}
